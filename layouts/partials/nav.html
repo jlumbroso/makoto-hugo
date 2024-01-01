@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+<nav class="navbar navbar-default {{ if .Site.Params.navbarFloating }}navbar-fixed-top{{ end }} navbar-custom">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
@@ -18,13 +18,13 @@
               <a class="navlinks-parent">{{ .Name }}</a>
               <div class="navlinks-children">
                 {{ range .Children }}
-                  <a href="{{ .URL | relLangURL }}">{{ .Name }}</a>
+                  <a href="{{ .URL | relLangURL }}" class="{{ if eq (strings.TrimSuffix "/" (.URL | relLangURL)) (strings.TrimSuffix "/" $.RelPermalink) }}current{{ end }}">{{ .Name }}</a>
                 {{ end }}
               </div>
             </li>
           {{ else }}
             <li>
-              <a title="{{ .Name }}" href="{{ .URL  | relLangURL }}">{{ .Name }}</a>
+              <a title="{{ .Name }}" class="{{ if eq (strings.TrimSuffix "/" (.URL | relLangURL)) (strings.TrimSuffix "/" $.RelPermalink) }}current{{ end }}" href="{{ .URL  | relLangURL }}">{{ .Name }}</a>
             </li>
           {{ end }}
         {{ end }}
@@ -62,7 +62,8 @@
       </ul>
     </div>
 
-    {{ if isset .Site.Params "logo" }}
+    <!-- Removing logo -->
+    {{ if and (isset .Site.Params "logo") .Site.Params.navbarCenteredLogo }}
       <div class="avatar-container">
         <div class="avatar-img-border">
           <a title="{{ .Site.Title }}" href="{{ "" | absLangURL }}">
@@ -71,6 +72,7 @@
         </div>
       </div>
     {{ end }}
+    <!-- Removing logo -->
 
   </div>
 </nav>

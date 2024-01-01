@@ -19,6 +19,8 @@ pygmentsCodefencesGuessSyntax = true
   subtitle = "Build a beautiful and simple website in minutes"
   mainSections = ["post","posts"]
   logo = "img/avatar-icon.png" # Expecting square dimensions
+  navbarFloating = false
+  navbarCenteredLogo = false
   favicon = "img/favicon.ico"
   dateFormat = "January 2, 2006"
   commit = false
@@ -81,7 +83,7 @@ pygmentsCodefencesGuessSyntax = true
   strava = "userid"
 
 [[menu.main]]
-    name = "Blog"
+    name = "Home"
     url = ""
     weight = 1
 

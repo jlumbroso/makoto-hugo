@@ -1,9 +1,9 @@
 /* --- General --- */
 
 body {
-  font-family: 'Lora', 'Times New Roman', serif;
+  font-family: "Space Grotesk", sans-serif; /*'Lora', 'Times New Roman', serif;*/
   font-size: 18px;
-  color: #404040;
+  color: #000;
   position: relative;
   background: #FFF;
   display: flex;
@@ -46,7 +46,7 @@ p a {
 }
 
 h1,h2,h3,h4,h5,h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family:  "Optima", sans-serif; /*'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
   font-weight: 800;
 }
 a {
@@ -156,8 +156,8 @@ figure:not(.dark) img, img.white {
 /* --- Navbar --- */
 
 .navbar-custom {
-  background: #F5F5F5;
-  border-bottom: 1px solid #EAEAEA;
+  background: #FFF; /*#F5F5F5;*/
+  border-bottom: 1px solid  #EAEAEA;
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 @media (prefers-color-scheme: dark) {
@@ -615,7 +615,7 @@ footer div.disclaimer {
   font-size: 27px;
   line-height: 1.1;
   display: block;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Space Grotesk", sans-serif; /*'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
   font-weight: 300;
   margin: 10px 0 0;
 }
@@ -640,7 +640,7 @@ footer div.disclaimer {
   padding: 5px 10px;
   font-size: 11px;
   color: #EEE;
-  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: "Space Grotesk", sans-serif; /*'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
   right: 0;
   bottom: 0;
   display: none;
@@ -959,3 +959,75 @@ h4.see-also {
     overflow-x: auto;
     overflow-y: hidden;
   }
+
+/* --- Remove floating navbar ---
+only activates if the site param floatingNavbar is set to false
+*/
+.navbar-custom {
+  padding-top: 0;
+}
+.navbar-fixed-top .navbar-custom {
+  padding-top: 0;
+}
+
+/* --- Hover navbar --- */
+
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 20px;
+  margin: 0 15px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block; /* Ensures the pseudo-elements align correctly */
+}
+
+nav a::before,
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 50%; /* Each line is half the width of the link */
+  height: 2px;
+  bottom: 0;
+  background-color: #333;
+  transition: transform 0.25s ease-out;
+  transform: scaleX(0);
+}
+
+nav a::before {
+  left: 50%;
+  transform-origin: left;
+}
+
+nav a::after {
+  right: 50%;
+  transform-origin: right;
+}
+
+nav a:hover::before,
+nav a:hover::after {
+  transform: scaleX(1);
+}
+
+/* New styles for 'current' class */
+nav a.current {
+  color: #136873!important;;
+  /* Example: Change text color for current link */
+}
+
+nav a.current::before,
+nav a.current::after {
+  background-color: #136873!important;
+  /* Example: Change line color for current link */
+}
+
+header .post-meta {
+  display: none;
+}
+
+
+nav .container-fluid {
+  padding-left: 300px;
+  padding-right: 300px;
+}

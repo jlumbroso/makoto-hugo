@@ -1,3 +1,3 @@
-module github.com/halogenica/beautifulhugo
+module github.com/jlumbroso/makoto-hugo
 
 go 1.20
