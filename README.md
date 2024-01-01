@@ -1,10 +1,10 @@
-# Beautiful Hugo - An adaptation of the Beautiful Jekyll theme
+# Makoto Hugo - An adaptation of the Beautiful Jekyll theme
 
-![Beautiful Hugo Theme Screenshot](https://github.com/halogenica/beautifulhugo/blob/master/images/screenshot.png)
+![Makoto Hugo Theme Screenshot](https://github.com/jlumbroso/makoto-hugo/blob/master/images/screenshot.png)
 
 ## Live demo
 
-See https://hugo-theme-beautifulhugo.netlify.app/
+See https://hugo-theme-makoto-hugo.netlify.app/
 
 ## Installation
 
@@ -12,9 +12,9 @@ Install Hugo and create a new site. See [the Hugo documentation](https://gohugo.
 
 ### Git Submodule
 
-Add Beautifulhugo as git submodule:
+Add makoto-hugo as git submodule:
 
-    $ git submodule add https://github.com/halogenica/beautifulhugo.git themes/beautifulhugo
+    $ git submodule add https://github.com/jlumbroso/makoto-hugo.git themes/makoto-hugo
 
 ### Hugo module
 
@@ -22,20 +22,20 @@ Initialize your site as hugo module:
 
     $ hugo mod init github.com/USERNAME/SITENAME
 
-Add Beautifulhugo module as a dependency of your site:
+Add makoto-hugo module as a dependency of your site:
 
-    $ hugo mod get github.com/halogenica/beautifulhugo
+    $ hugo mod get github.com/jlumbroso/makoto-hugo
 
 ### Site preview
 
 Copy the content of `exampleSite` at the root of your project:
 
-    cp -r themes/beautifulhugo/exampleSite/* . -iv
+    cp -r themes/makoto-hugo/exampleSite/* . -iv
 
-If you installed Beautifulhugo as hugo module, set your theme in your config file (hugo.toml):
+If you installed makoto-hugo as hugo module, set your theme in your config file (hugo.toml):
 
     [[module.imports]]
-      path = "github.com/halogenica/beautifulhugo"
+      path = "github.com/jlumbroso/makoto-hugo"
 
 Start Hugo:
 
@@ -165,7 +165,7 @@ See at [vincenttam/vincenttam.gitlab.io](https://gitlab.com/vincenttam/vincentta
 
 ### Multilingual
 
-To allow Beautiful Hugo to go multilingual, you need to define the languages
+To allow Makoto Hugo to go multilingual, you need to define the languages
 you want to use inside the `languages` parameter on `config.toml` file, also
 redefining the content dir for each one. Check the `i18n/` folder to see all
 languages available.
@@ -192,7 +192,7 @@ content/      content/      content/
 
 ### Self Hosted assets for GDPR / EU-DSGVO compliance
 
-With default settings, visiting to a website using Beautifulhugo connects also to remote services like google fonts or jsdelivr to embed fonts, js and other assets.
+With default settings, visiting to a website using makoto-hugo connects also to remote services like google fonts or jsdelivr to embed fonts, js and other assets.
 
 To avoid this, set the following param in config.toml:
 
@@ -229,13 +229,13 @@ This is column 2.
 
 ### Social Media Icons
 
-In order to show social media icons in the footer, add a section like this to your `config.yaml`.  You can see the full list of supported social media sites in `data/beautifulhugo/social.toml`.
+In order to show social media icons in the footer, add a section like this to your `config.yaml`.  You can see the full list of supported social media sites in `data/makoto-hugo/social.toml`.
 
 ```yaml
 author: 
   name: "Author Name"
   website: "https://example.com"
-  github: halogenica/beautifulhugo
+  github: jlumbroso/makoto-hugo
   twitter: username
   discord: 96VAXXvjCB
 ```
@@ -246,4 +246,4 @@ This is an adaptation of the Jekyll theme [Beautiful Jekyll](https://deanattali.
 
 ## License
 
-MIT Licensed, see [LICENSE](https://github.com/halogenica/Hugo-BeautifulHugo/blob/master/LICENSE).
+MIT Licensed, see [LICENSE](https://github.com/jlumbroso/makoto-hugo/blob/master/LICENSE).

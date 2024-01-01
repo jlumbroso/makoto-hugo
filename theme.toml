@@ -1,5 +1,4 @@
-name = "Makoto Hugo"
-description = "A theme inspired by Makoto Fujirama, adapted from Beautiful Hugo (itself based on Beautiful Jekyll)."
+description = "A theme inspired by Makoto Fujirama, adapted from Makoto Hugo (itself based on Beautiful Jekyll)."
 features = [
   "blog",
   "company",
@@ -22,6 +21,7 @@ features = [
 license = "MIT"
 licenselink = "https://github.com/jlumbroso/makoto-hugo/blob/master/LICENSE"
 min_version = 0.48
+name = "Makoto Hugo"
 tags = [
   "blog",
   "company",
@@ -43,11 +43,11 @@ tags = [
 ]
 
 [author]
-    name = "jlumbroso"
-    homepage = "https://github.com/jlumbroso"
+homepage = "https://github.com/jlumbroso"
+name = "jlumbroso"
 
 # If Porting existing theme
 [original]
-    author =  "halogenica"
-    homepage = "https://halogenica.net"
-    repo = "https://github.com/halogenica/Hugo-BeautifulHugo"
+author = "halogenica"
+homepage = "https://halogenica.net"
+repo = "https://github.com/halogenica/Hugo-BeautifulHugo"
