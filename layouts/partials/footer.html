@@ -13,7 +13,7 @@
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
         <ul class="list-inline text-center footer-links">
-          {{ range .Site.Data.makoto-hugo.social.social_icons }}
+          {{ range .Site.Data.makotohugo.social.social_icons }}
             {{- if isset $.Site.Author .id }}
               <li>
 		{{ if or ( hasPrefix ( index $.Site.Author .id ) "http://" ) ( hasPrefix ( index $.Site.Author .id ) "https://" ) }}
