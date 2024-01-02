@@ -50,15 +50,23 @@
           {{ end }}
 
           &nbsp;&bull;&nbsp;&copy;
-          {{ if .Site.Params.since }}
-            {{ .Site.Params.since }} - {{ .Site.LastChange.Format "2006" }}
+          {{ if eq (.Site.LastChange.Format "2006") "0001" }}
+            {{ if .Site.Params.since }}
+              {{ .Site.Params.since }} - {{ now.Format "2006" }}
+            {{ else }}
+              {{ now.Format "2006" }}
+            {{ end }}
           {{ else }}
-            {{ .Site.LastChange.Format "2006" }}
-          {{ end }}
+            {{ if .Site.Params.since }}
+              {{ .Site.Params.since }} - {{ .Site.LastChange.Format "2006" }}
+            {{ else }}
+              {{ .Site.LastChange.Format "2006" }}
+            {{ end }}
 
-          {{ if .Site.Title }}
-            &nbsp;&bull;&nbsp;
-            <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a>
+            {{ if .Site.Title }}
+              &nbsp;&bull;&nbsp;
+              <a href="{{ "" | absLangURL }}">{{ .Site.Title }}</a>
+            {{ end }}
           {{ end }}
         </p>
         <!-- Please don't remove this, keep my open source work credited :) -->
