@@ -1,11 +1,11 @@
-<nav class="navbar navbar-default {{ if .Site.Params.navbarFloating }}navbar-fixed-top{{ end }} navbar-custom">
+<nav class="navbar navbar-default navbar-custom">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">{{ i18n "toggleNavigation" }}</span>
+        <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+        <span the="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="{{ "" | absLangURL }}">{{ .Site.Title }}</a>
     </div>
@@ -14,21 +14,23 @@
       <ul class="nav navbar-nav navbar-right">
         {{ range .Site.Menus.main.ByWeight }}
           {{ if .HasChildren }}
-            <li class="navlinks-container">
-              <a class="navlinks-parent">{{ .Name }}</a>
-              <div class="navlinks-children">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                {{ .Name }} <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
                 {{ range .Children }}
-                  <a href="{{ .URL | relLangURL }}" class="{{ if eq (strings.TrimSuffix "/" (.URL | relLangURL)) (strings.TrimSuffix "/" $.RelPermalink) }}current{{ end }}">{{ .Name }}</a>
+                  <li><a href="{{ .URL | relLangURL }}" class="{{ if eq (strings.TrimSuffix "/" (.URL | relLangURL)) (strings.TrimSuffix "/" $.RelPermalink) }}current{{ end }}" href="{{ .URL  | relLangURL }}">{{ .Name }}</a></li>
                 {{ end }}
-              </div>
+              </ul>
             </li>
           {{ else }}
             <li>
-              <a title="{{ .Name }}" class="{{ if eq (strings.TrimSuffix "/" (.URL | relLangURL)) (strings.TrimSuffix "/" $.RelPermalink) }}current{{ end }}" href="{{ .URL  | relLangURL }}">{{ .Name }}</a>
+              <a title="{{ .Name }}" href="{{ .URL | relLangURL }}" class="{{ if eq (strings.TrimSuffix "/" (.URL | relLangURL)) (strings.TrimSuffix "/" $.RelPermalink) }}current{{ end }}" href="{{ .URL  | relLangURL }}">{{ .Name }}</a>
             </li>
           {{ end }}
         {{ end }}
-
+        <!-- Additional navbar items here -->
         {{ if .Site.IsMultiLingual }}
           {{ if ge (len .Site.Languages) 3 }}
             <li class="navlinks-container">
