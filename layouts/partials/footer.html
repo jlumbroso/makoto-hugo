@@ -51,13 +51,13 @@
 
           &nbsp;&bull;&nbsp;&copy;
           {{ if eq (.Site.LastChange.Format "2006") "0001" }}
-            {{ if .Site.Params.since }}
+            {{ if and .Site.Params.since (not (eq .Site.Params.since (now.Format "2006"))) }}
               {{ .Site.Params.since }} - {{ now.Format "2006" }}
             {{ else }}
               {{ now.Format "2006" }}
             {{ end }}
           {{ else }}
-            {{ if .Site.Params.since }}
+            {{ if and (.Site.Params.since) (not (eq .Site.Params.since (.Site.LastChange.Format "2006"))) }}
               {{ .Site.Params.since }} - {{ .Site.LastChange.Format "2006" }}
             {{ else }}
               {{ .Site.LastChange.Format "2006" }}
