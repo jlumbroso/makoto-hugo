@@ -49,6 +49,9 @@ h1,h2,h3,h4,h5,h6 {
   font-family:  "Optima", sans-serif; /*'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
   /*font-weight: 800;*/
 }
+h3,h4,h5,h6 {
+  zoom: 2;
+}
 a {
   color: #FF7349;
 }
@@ -1027,6 +1030,13 @@ nav .collapse a.current::before,
 nav .collapse a.current::after {
   background-color: #DB633F!important;
   /* Example: Change line color for current link */
+}
+
+/* New styles for 'current' class */
+nav .collapse a.current,
+nav .collapse a.current::before,
+nav .collapse a.current::after {
+  transform: scaleX(1); /* This keeps the underline visible */
 }
 
 header .post-meta {
