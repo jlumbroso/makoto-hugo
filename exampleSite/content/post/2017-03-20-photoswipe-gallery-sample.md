@@ -5,17 +5,20 @@ date: 2017-03-20
 tags: ["example", "photoswipe"]
 ---
 
-Makoto Hugo adds a few custom shortcodes created by [Li-Wen Yip](https://www.liwen.id.au/heg/) and [Gert-Jan van den Berg](https://github.com/GjjvdBurg/HugoPhotoSwipe) for making galleries with [PhotoSwipe](https://photoswipe.com) . 
+SweetBSite adds a few custom shortcodes created by [Li-Wen Yip](https://www.liwen.id.au/heg/) and [Gert-Jan van den Berg](https://github.com/GjjvdBurg/HugoPhotoSwipe) for making galleries with [PhotoSwipe](https://photoswipe.com) .
 
 {{< gallery caption-effect="fade" >}}
-  {{< figure thumb="-thumb" link="/img/hexagon.jpg" >}}
-  {{< figure thumb="-thumb" link="/img/sphere.jpg" caption="Sphere" >}}
-  {{< figure thumb="-thumb" link="/img/triangle.jpg" caption="Triangle" alt="This is a long comment about a triangle" >}}
+{{< figure thumb="-thumb" link="/img/hexagon.jpg" >}}
+{{< figure thumb="-thumb" link="/img/sphere.jpg" caption="Sphere" >}}
+{{< figure thumb="-thumb" link="/img/triangle.jpg" caption="Triangle" alt="This is a long comment about a triangle" >}}
 {{< /gallery >}}
 
 <!--more-->
+
 ## Example
+
 The above gallery was created using the following shortcodes:
+
 ```
 {{</* gallery caption-effect="fade" */>}}
   {{</* figure thumb="-thumb" link="/img/hexagon.jpg" */>}}
@@ -25,6 +28,7 @@ The above gallery was created using the following shortcodes:
 ```
 
 ## Usage
+
 For full details please see the [hugo-easy-gallery GitHub](https://github.com/liwenyip/hugo-easy-gallery/) page. Basic usages from above are:
 
 - Create a gallery with open and close tags `{{</* gallery */>}}` and `{{</* /gallery */>}}`

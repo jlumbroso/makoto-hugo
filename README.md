@@ -1,10 +1,10 @@
-# Makoto Hugo - An adaptation of the Beautiful Jekyll theme
+# SweetBSite - An adaptation of the Beautiful Jekyll theme
 
-![Makoto Hugo Theme Screenshot](https://github.com/jlumbroso/makoto-hugo/blob/master/images/screenshot.png)
+![SweetBSite Theme Screenshot](https://github.com/jlumbroso/sweetb-hugo/blob/master/images/screenshot.png)
 
 ## Live demo
 
-See https://hugo-theme-makoto-hugo.netlify.app/
+See https://hugo-theme-sweetb-hugo.netlify.app/
 
 ## Installation
 
@@ -12,9 +12,9 @@ Install Hugo and create a new site. See [the Hugo documentation](https://gohugo.
 
 ### Git Submodule
 
-Add makoto-hugo as git submodule:
+Add sweetb-hugo as git submodule:
 
-    $ git submodule add https://github.com/jlumbroso/makoto-hugo.git themes/makoto-hugo
+    $ git submodule add https://github.com/jlumbroso/sweetb-hugo.git themes/sweetb-hugo
 
 ### Hugo module
 
@@ -22,20 +22,20 @@ Initialize your site as hugo module:
 
     $ hugo mod init github.com/USERNAME/SITENAME
 
-Add makoto-hugo module as a dependency of your site:
+Add sweetb-hugo module as a dependency of your site:
 
-    $ hugo mod get github.com/jlumbroso/makoto-hugo
+    $ hugo mod get github.com/jlumbroso/sweetb-hugo
 
 ### Site preview
 
 Copy the content of `exampleSite` at the root of your project:
 
-    cp -r themes/makoto-hugo/exampleSite/* . -iv
+    cp -r themes/sweetb-hugo/exampleSite/* . -iv
 
-If you installed makoto-hugo as hugo module, set your theme in your config file (hugo.toml):
+If you installed sweetb-hugo as hugo module, set your theme in your config file (hugo.toml):
 
     [[module.imports]]
-      path = "github.com/jlumbroso/makoto-hugo"
+      path = "github.com/jlumbroso/sweetb-hugo"
 
 Start Hugo:
 
@@ -75,9 +75,10 @@ pygmentsStyle = "trac"
 pygmentsUseClassic = true
 ```
 
-Pygments is mostly compatible with the newer Chroma. It is slower but has some additional theme options. I recommend Chroma over Pygments. Pygments will use `syntax.css` for highlighting, unless you also set the config `pygmentsUseClasses = false` which will generate the style code directly in the HTML file. 
+Pygments is mostly compatible with the newer Chroma. It is slower but has some additional theme options. I recommend Chroma over Pygments. Pygments will use `syntax.css` for highlighting, unless you also set the config `pygmentsUseClasses = false` which will generate the style code directly in the HTML file.
 
 #### Highlight.js - Client side syntax highlighting
+
 ```
 [Params]
     useHLJS = true
@@ -91,7 +92,7 @@ To use this feature, uncomment and fill out the `disqusShortname` parameter in `
 
 ### Staticman support
 
-Add *Staticman* configuration section in `config.toml` or `config.yaml`
+Add _Staticman_ configuration section in `config.toml` or `config.yaml`
 
 Sample `config.toml` configuration
 
@@ -105,7 +106,7 @@ Sample `config.toml` configuration
 
 Note: The public `API-ENDPOINT` https://staticman.net is currently hitting its API limit, so one may use other API instances to provide Staticman comment service.
 
-The section `[Params.staticman.recaptcha]` is *optional*.  To add reCAPTCHA to your site, you have to replace the default values with your own ones (to be obtained from Google.)  The site `secret` has to be encrypted with
+The section `[Params.staticman.recaptcha]` is _optional_. To add reCAPTCHA to your site, you have to replace the default values with your own ones (to be obtained from Google.) The site `secret` has to be encrypted with
 
     https://<API-ENDPOINT>/v3/encrypt/<SITE-SECRET>
 
@@ -134,16 +135,16 @@ comments:
     secret: "hsGjWtWHR4HK4pT7cUsWTArJdZDxxE2pkdg/ArwCguqYQrhuubjj3RS9C5qa8xu4cx/Y9EwHwAMEeXPCZbLR9eW1K9LshissvNcYFfC/b8KKb4deH4V1+oqJEk/JcoK6jp6Rr2nZV4rjDP9M7nunC3WR5UGwMIYb8kKhur9pAic="
 ```
 
-If you *don't* have the section `[Params.staticman]` in `config.toml`, you *won't* need the section `reCaptcha`  in `staticman.yml`
+If you _don't_ have the section `[Params.staticman]` in `config.toml`, you _won't_ need the section `reCaptcha` in `staticman.yml`
 
 ### Site Disclaimer
 
 If you need to put a Disclaimer on your website (e.g. "My views are my own and not my employer's"), you can do so via the following:
 
-* Uncomment and edit the `disclaimerText` parameter in `config.toml`.
-* If you need to adjust the disclaimer's styling, modify the declarations within the `footer div.disclaimer` selector in `static/css/main.css`.
+- Uncomment and edit the `disclaimerText` parameter in `config.toml`.
+- If you need to adjust the disclaimer's styling, modify the declarations within the `footer div.disclaimer` selector in `static/css/main.css`.
 
-> The code for the disclaimer text is in `layouts/partials/footer.html`.  Moving this code block to another partial file (or relocating it within `footer.html`) will require changes to the css selector in `main.css` as well.
+> The code for the disclaimer text is in `layouts/partials/footer.html`. Moving this code block to another partial file (or relocating it within `footer.html`) will require changes to the css selector in `main.css` as well.
 
 ### Google Analytics
 
@@ -165,14 +166,14 @@ See at [vincenttam/vincenttam.gitlab.io](https://gitlab.com/vincenttam/vincentta
 
 ### Multilingual
 
-To allow Makoto Hugo to go multilingual, you need to define the languages
+To allow SweetBSite to go multilingual, you need to define the languages
 you want to use inside the `languages` parameter on `config.toml` file, also
 redefining the content dir for each one. Check the `i18n/` folder to see all
 languages available.
 
 ```toml
 [languages]
-  [languages.en] 
+  [languages.en]
     contentDir = "content/en" # English
   [languages.ja]
     contentDir = "content/ja" # Japanese
@@ -182,9 +183,10 @@ languages available.
 
 Now you just need to create a subdir within the `content/` folder for each
 language and just put stuff inside `page/` and `post/` regular directories.
+
 ```
-content/      content/      content/  
-└── en/       └── br/       └── ja/ 
+content/      content/      content/
+└── en/       └── br/       └── ja/
     ├── page/     ├── page/     ├── page/
     └── post/     └── post/     └── post/
 
@@ -192,7 +194,7 @@ content/      content/      content/
 
 ### Self Hosted assets for GDPR / EU-DSGVO compliance
 
-With default settings, visiting to a website using makoto-hugo connects also to remote services like google fonts or jsdelivr to embed fonts, js and other assets.
+With default settings, visiting to a website using sweetb-hugo connects also to remote services like google fonts or jsdelivr to embed fonts, js and other assets.
 
 To avoid this, set the following param in config.toml:
 
@@ -207,7 +209,7 @@ There are two extra shortcodes provided (along with the customized figure shortc
 
 #### Details
 
-This simply adds the html5 detail attribute, supported on all *modern* browsers. Use it like this:
+This simply adds the html5 detail attribute, supported on all _modern_ browsers. Use it like this:
 
 ```
 {{< details "This is the details title (click to expand)" >}}
@@ -229,13 +231,13 @@ This is column 2.
 
 ### Social Media Icons
 
-In order to show social media icons in the footer, add a section like this to your `config.yaml`.  You can see the full list of supported social media sites in `data/makoto-hugo/social.toml`.
+In order to show social media icons in the footer, add a section like this to your `config.yaml`. You can see the full list of supported social media sites in `data/sweetb-hugo/social.toml`.
 
 ```yaml
-author: 
+author:
   name: "Author Name"
   website: "https://example.com"
-  github: jlumbroso/makoto-hugo
+  github: jlumbroso/sweetb-hugo
   twitter: username
   discord: 96VAXXvjCB
 ```
@@ -246,4 +248,4 @@ This is an adaptation of the Jekyll theme [Beautiful Jekyll](https://deanattali.
 
 ## License
 
-MIT Licensed, see [LICENSE](https://github.com/jlumbroso/makoto-hugo/blob/master/LICENSE).
+MIT Licensed, see [LICENSE](https://github.com/jlumbroso/sweetb-hugo/blob/master/LICENSE).

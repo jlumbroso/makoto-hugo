@@ -1,3 +1,3 @@
-module github.com/jlumbroso/makoto-hugo
+module github.com/jlumbroso/sweetb-hugo
 
 go 1.20

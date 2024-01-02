@@ -1,4 +1,4 @@
-description = "A theme inspired by Makoto Fujirama, adapted from Makoto Hugo (itself based on Beautiful Jekyll)."
+description = "A theme adapted from Beautiful Hugo (itself based on Beautiful Jekyll)."
 features = [
   "blog",
   "company",
@@ -19,9 +19,9 @@ features = [
   "technical",
 ]
 license = "MIT"
-licenselink = "https://github.com/jlumbroso/makoto-hugo/blob/master/LICENSE"
+licenselink = "https://github.com/jlumbroso/sweetb-hugo/blob/master/LICENSE"
 min_version = 0.48
-name = "Makoto Hugo"
+name = "SweetBSite"
 tags = [
   "blog",
   "company",

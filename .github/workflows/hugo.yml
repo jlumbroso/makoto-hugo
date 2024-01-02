@@ -20,7 +20,6 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
-
 jobs:
   # Build job
   build:
@@ -68,5 +67,5 @@ jobs:
         if: >
           success()
           && github.ref == 'refs/heads/master'
-          && github.repository == 'jlumbroso/makoto-hugo'
+          && github.repository == 'jlumbroso/sweetb-hugo'
         uses: actions/deploy-pages@v2

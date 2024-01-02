@@ -2,7 +2,7 @@
 
 body {
   font-family: "Space Grotesk", sans-serif; /*'Lora', 'Times New Roman', serif;*/
-  font-size: 18px;
+  font-size: 25px;
   color: #000;
   position: relative;
   background: #FFF;
@@ -37,7 +37,7 @@ p + p {
 }
 p a {
   /* text-decoration: underline */
-  color: #1A8896;
+  color: #FF7349;
 }
 @media (prefers-color-scheme: dark) {
   p a {
@@ -47,10 +47,10 @@ p a {
 
 h1,h2,h3,h4,h5,h6 {
   font-family:  "Optima", sans-serif; /*'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
-  font-weight: 800;
+  /*font-weight: 800;*/
 }
 a {
-  color: #1A8896;
+  color: #FF7349;
 }
 @media (prefers-color-scheme: dark) {
   a {
@@ -59,7 +59,7 @@ a {
 }
 a:hover,
 a:focus {
-  color: #1A8896;
+  color: #FF7349;
 }
 blockquote {
   color: #808080;
@@ -120,7 +120,7 @@ div.panel-body a.list-group-item.view-all {
 ::-moz-selection, ::selection {
   color: white;
   text-shadow: none;
-  background: #1A8896;
+  background: #FF7349;
 }
 img::selection, img::-moz-selection {
   color: white;
@@ -169,13 +169,13 @@ figure:not(.dark) img, img.white {
 
 .navbar-custom .nav li a {
   /*text-transform: uppercase;*/
-  font-size: 14px;
+  font-size: 16px;
   letter-spacing: 1px;
 }
 
 .navbar-custom .navbar-brand,
 .navbar-custom .nav li a {
-  font-weight: 800;
+  /*font-weight: 800;*/
   color: #404040;
 }
 
@@ -190,7 +190,7 @@ figure:not(.dark) img, img.white {
 .navbar-custom .navbar-brand:focus ,
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #1A8896;
+  color: #FF7349;
 }
 
 .navbar-custom .navbar-brand:hover,
@@ -303,7 +303,7 @@ figure:not(.dark) img, img.white {
   display: block;
   padding: 10px;
   padding-left: 30px;
-  background: #f5f5f5;
+  background: /*#f5f5f5;*/ #fff;
   text-decoration: none !important;
   border-width: 0 1px 1px 1px;
   font-weight: normal;
@@ -321,7 +321,7 @@ figure:not(.dark) img, img.white {
     text-align: center;
   }
   .navbar-custom .nav .navlinks-container:hover {
-    background: #eee;
+    background: #fff;
   }
   .navbar-custom .nav .navlinks-container:hover .navlinks-children {
     display: block;
@@ -343,7 +343,7 @@ figure:not(.dark) img, img.white {
     border: 1px solid #AAA;
   }
   .navbar-custom .nav .navlinks-container .navlinks-children a {
-    background: #444;
+    background: #fff;
   }
 }
 
@@ -447,7 +447,7 @@ footer div.disclaimer {
 .post-preview a:focus,
 .post-preview a:hover {
   text-decoration: none;
-  color: #1A8896;
+  color: #FF7349;
 }
 
 .post-preview .post-title {
@@ -527,7 +527,7 @@ footer div.disclaimer {
 }
 
 .blog-tags a {
-  color: #1A8896;
+  color: #FF7349;
   text-decoration: none;
   padding: 0px 5px;
 }
@@ -538,7 +538,7 @@ footer div.disclaimer {
 
 .blog-tags a:hover {
   border-radius: 2px;
-  color: #1A8896;
+  color: #FF7349;
   background-color: #CCC;
 }
 
@@ -618,7 +618,7 @@ footer div.disclaimer {
 }
 .intro-header .page-heading .page-subheading,
 .intro-header .post-heading .post-subheading {
-  font-size: 27px;
+  font-size: 32px;
   line-height: 1.1;
   display: block;
   font-family: "Space Grotesk", sans-serif; /*'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
@@ -653,7 +653,7 @@ footer div.disclaimer {
 }
 @media only screen and (min-width: 768px) {
   .intro-header {
-    margin-top: 130px;
+    margin-top: 40px;  /* 130px -> 20px padding at the top of the page */
   }
   .intro-header.big-img {
     margin-top: 91px;  /* Full navbar is small navbar + 20px padding on each side when expanded */
@@ -740,8 +740,8 @@ footer div.disclaimer {
 .pager li a:hover,
 .pager li a:focus {
   color: #FFF;
-  background: #1A8896;
-  border: 1px solid #1A8896;
+  background: #FF7349;
+  border: 1px solid #FF7349;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -874,8 +874,8 @@ div.splitbox div.right {
 .disqus-comments button:hover, 
 .disqus-comments button:focus {
   color: #FFF;
-  background: #1A8896;
-  border: 1px solid #1A8896;
+  background: #FF7349;
+  border: 1px solid #FF7349;
 }
 
 /* Related posts */
@@ -983,7 +983,7 @@ nav .collapse a {
   text-decoration: none;
   color: #333;
   font-size: 20px;
-  margin: 0 15px;
+  margin: 0 0px /*15px*/; /* spacing between links */
   position: relative;
   overflow: hidden;
   display: inline-block; /* Ensures the pseudo-elements align correctly */
@@ -1019,13 +1019,13 @@ nav .collapse a:hover::after {
 
 /* New styles for 'current' class */
 nav .collapse a.current {
-  color: #136873!important;;
+  color: #DB633F!important;;
   /* Example: Change text color for current link */
 }
 
 nav .collapse a.current::before,
 nav .collapse a.current::after {
-  background-color: #136873!important;
+  background-color: #DB633F!important;
   /* Example: Change line color for current link */
 }
 
@@ -1035,6 +1035,6 @@ header .post-meta {
 
 
 nav .container-fluid {
-  padding-left: 300px;
-  padding-right: 300px;
+  padding-left: 100px;
+  padding-right: 100px;
 }

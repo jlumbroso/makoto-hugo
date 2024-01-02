@@ -26,14 +26,13 @@
 - id: words
   translation: "words"
 
-
 # 404 page
 - id: pageNotFound
   translation: "Whoops, this page doesn't exist. Move along. (404 error)"
 
 # Footer
 - id: poweredBy # Accepts HTML
-  translation: '<a href="https://gohugo.io">Hugo v{{ .Site.Hugo.Version }}</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/jlumbroso/makoto-hugo">Makoto Hugo</a> adapted from <a href="https://github.com/halogenica/Hugo-BeautifulHugo">Beautiful Hugo</a> and <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>'
+  translation: '<a href="https://gohugo.io">Hugo v{{ .Site.Hugo.Version }}</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/jlumbroso/sweetb-hugo">SweetBSite</a> adapted from <a href="https://github.com/halogenica/Hugo-BeautifulHugo">Beautiful Hugo</a> and <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>'
 
 # Navigation
 - id: toggleNavigation
@@ -67,7 +66,7 @@
 - id: show
   translation: "Show"
 - id: comments
-  translation: "comments" 
+  translation: "comments"
 
 # Related posts
 - id: seeAlso

@@ -1,5 +1,3 @@
-
-
 # Content
 
 - id: dateFormat
@@ -54,25 +52,17 @@
 
   translation: "paroll"
 
-
-
-
-
 # 404 page
 
 - id: pageNotFound
 
   translation: "Ocio, quella pagina chi la esist no. (errore 404)"
 
-
-
 # Footer
 
 - id: poweredBy # Accepts HTML
 
-  translation: '<a href="https://gohugo.io">Desviluppaa con Hugo v{{ .Site.Hugo.Version }}</a> &nbsp;&bull;&nbsp; Tema <a href="https://github.com/jlumbroso/makoto-hugo">Makoto Hugo</a> adattaa de <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>'
-
-
+  translation: '<a href="https://gohugo.io">Desviluppaa con Hugo v{{ .Site.Hugo.Version }}</a> &nbsp;&bull;&nbsp; Tema <a href="https://github.com/jlumbroso/sweetb-hugo">SweetBSite</a> adattaa de <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>'
 
 # Navigation
 
@@ -95,8 +85,6 @@
 - id: gcseClose
 
   translation: "Sara su"
-
-
 
 # Staticman
 
@@ -128,8 +116,6 @@
 
   translation: "El tò sitt web"
 
-
-
 # Delayed Disqus
 
 - id: show
@@ -138,9 +124,7 @@
 
 - id: comments
 
-  translation: "comment" 
-
-
+  translation: "comment"
 
 # Related posts
 
@@ -148,23 +132,17 @@
 
   translation: "Varda anca"
 
-
-
 # 404 page
 
 - id: pageNotFound
 
   translation: "Ocio, quella pagina chi la esist no. (errore 404)"
 
-
-
 # Footer
 
 - id: poweredBy # Accepts HTML
 
-  translation: '<a href="https://gohugo.io">Desviluppaa con Hugo v{{ .Site.Hugo.Version }}</a> &nbsp;&bull;&nbsp; Tema <a href="https://github.com/jlumbroso/makoto-hugo">Makoto Hugo</a> adattaa de <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>'
-
-
+  translation: '<a href="https://gohugo.io">Desviluppaa con Hugo v{{ .Site.Hugo.Version }}</a> &nbsp;&bull;&nbsp; Tema <a href="https://github.com/jlumbroso/sweetb-hugo">SweetBSite</a> adattaa de <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>'
 
 # Navigation
 
@@ -187,8 +165,6 @@
 - id: gcseClose
 
   translation: "Sara su"
-
-
 
 # Staticman
 
@@ -220,8 +196,6 @@
 
   translation: "El tò sitt web"
 
-
-
 # Delayed Disqus
 
 - id: show
@@ -230,9 +204,7 @@
 
 - id: comments
 
-  translation: "comment" 
-
-
+  translation: "comment"
 
 # Related posts
 

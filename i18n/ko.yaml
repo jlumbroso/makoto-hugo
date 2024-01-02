@@ -26,14 +26,13 @@
 - id: words
   translation: "단어"
 
-
 # 404 page
 - id: pageNotFound
   translation: "이런, 이 페이지를 찾을 수 없어요. (404 오류)"
 
 # Footer
 - id: poweredBy # Accepts HTML
-  translation: '<a href="https://gohugo.io">Hugo v{{ .Site.Hugo.Version }}</a> 을 사용함 &nbsp;&bull;&nbsp; <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> 를 개조한 <a href="https://github.com/jlumbroso/makoto-hugo">Makoto Hugo</a> 테마'
+  translation: '<a href="https://gohugo.io">Hugo v{{ .Site.Hugo.Version }}</a> 을 사용함 &nbsp;&bull;&nbsp; <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a> 를 개조한 <a href="https://github.com/jlumbroso/sweetb-hugo">SweetBSite</a> 테마'
 
 # Navigation
 - id: toggleNavigation
