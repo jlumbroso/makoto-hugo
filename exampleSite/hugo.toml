@@ -1,6 +1,6 @@
 DefaultContentLanguage = "en"
 baseurl = "https://username.github.io"
-title = "SweetBSite"
+title = "SweetB Hugo"
 # Using theme as git submodule 
 theme = "sweetb-hugo"
 # Or when using theme as hugo module
@@ -15,7 +15,7 @@ pygmentsUseClasses = true
 #googleAnalytics = "XXX"
 
 [Params]
-#  homeTitle = "SweetBSite Theme" # Set a different text for the header on the home page
+#  homeTitle = "SweetB Hugo Theme" # Set a different text for the header on the home page
 comments = true 
 commit = false 
 dateFormat = "January 2, 2006" 

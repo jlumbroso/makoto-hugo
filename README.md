@@ -1,6 +1,6 @@
-# SweetBSite - An adaptation of the Beautiful Jekyll theme
+# SweetB Hugo - An adaptation of the Beautiful Jekyll theme
 
-![SweetBSite Theme Screenshot](https://github.com/jlumbroso/sweetb-hugo/blob/master/images/screenshot.png)
+![SweetB Hugo Theme Screenshot](https://github.com/jlumbroso/sweetb-hugo/blob/master/images/screenshot.png)
 
 ## Live demo
 
@@ -166,7 +166,7 @@ See at [vincenttam/vincenttam.gitlab.io](https://gitlab.com/vincenttam/vincentta
 
 ### Multilingual
 
-To allow SweetBSite to go multilingual, you need to define the languages
+To allow SweetB Hugo to go multilingual, you need to define the languages
 you want to use inside the `languages` parameter on `config.toml` file, also
 redefining the content dir for each one. Check the `i18n/` folder to see all
 languages available.
