@@ -51,14 +51,14 @@
 
           &nbsp;&bull;&nbsp;&copy;
           {{ if eq (.Site.LastChange.Format "2006") "0001" }}
-            {{ if and .Site.Params.since (not (eq .Site.Params.since (now.Format "2006"))) }}
-              {{ .Site.Params.since }} - {{ now.Format "2006" }}
+            {{ if and .Site.Params.since (not (eq (printf "%d" .Site.Params.since) (now.Format "2006"))) }}
+              {{ .Site.Params.since }}&ndash;{{ now.Format "2006" }}
             {{ else }}
               {{ now.Format "2006" }}
             {{ end }}
           {{ else }}
-            {{ if and (.Site.Params.since) (not (eq .Site.Params.since (.Site.LastChange.Format "2006"))) }}
-              {{ .Site.Params.since }} - {{ .Site.LastChange.Format "2006" }}
+            {{ if and .Site.Params.since (not (eq (printf "%d" .Site.Params.since) (.Site.LastChange.Format "2006"))) }}
+              {{ .Site.Params.since }}&ndash;{{ .Site.LastChange.Format "2006" }}
             {{ else }}
               {{ .Site.LastChange.Format "2006" }}
             {{ end }}
